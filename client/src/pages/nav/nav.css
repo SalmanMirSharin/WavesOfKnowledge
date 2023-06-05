@@ -1,0 +1,29 @@
+
+.logo {
+    font-size: 1.3rem;
+    color: var(--color-logo);
+    font-weight: 700;
+}
+
+
+section {
+    margin-top: 0;
+}
+
+nav {
+    background: var(--color-nav);
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+
+
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+    /* padding: 2rem; */
+    font-size: 1.2rem;
+    /* justify-content: right; */
+
+}
