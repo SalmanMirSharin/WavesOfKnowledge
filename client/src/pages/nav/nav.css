@@ -15,15 +15,80 @@ nav {
     display: flex;
     padding: 2rem;
     justify-content: space-between;
+    height: 6rem;
 
 
 }
 
-ul {
+.nav_menu {
     display: flex;
     gap: 2rem;
-    /* padding: 2rem; */
     font-size: 1.2rem;
-    /* justify-content: right; */
+    transition: var(--transition);
+   
+
+}
+
+.nav_menu li {
+    position: relative;
+}
+
+
+.sub-nav {
+    background: var(--color-logo);
+    display: flex;
+    position: absolute;
+    gap: 0.7rem;
+    flex-direction: column;
+    padding: 1rem 2rem 1rem 1rem;
+    z-index: 1;
+    top: 2rem;
+    width: max-content;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.sub-nav-transi {
+    opacity: 1;
+}
+
+.menu {
+    position: absolute;
+    right: 1.4rem;
+    top: 2.3rem;
+    font-size: 1.5rem;
+    color:black;
+    display: none;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+            .menu{
+                display: block;
+            }
+            .nav_menu{
+                flex-direction: column;
+                position: absolute;
+                background: var(--color-nav);
+                width: 10rem;
+                padding: 1rem;
+                left: -10rem;
+                top: 6rem;
+                transition: all 2s;
+                text-align: center;
+                opacity: 0;
+               
+            }
+
+            .nav_menu li a{
+                font-weight: 900;
+            }
+
+    .active{
+        opacity: 1;
+        left: 0;
+    }
 
 }
